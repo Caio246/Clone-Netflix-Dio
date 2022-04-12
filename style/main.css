@@ -1,0 +1,41 @@
+:root{
+  --vermelho: #E50914;
+  --preta: #141414;
+ /*  Evita de ter que ficar trocando as cores do site inteiro, na hora da manuntenção */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /* Evita que a caixa seja emburrada para os lados, deixa proporcional, não rompe a caixa */
+}
+
+body{
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+
+header .logo{
+ color: var(--vermelho);
+ font-family: 'Arial Black', Times;
+ font-size: 2.5rem;
+ margin-left: 0.3rem;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #fff;
+}
