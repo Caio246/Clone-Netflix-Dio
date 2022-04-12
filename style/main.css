@@ -15,7 +15,7 @@
 
 body{
   background: var(--preta);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
   color:#fff;
 }
 
@@ -47,7 +47,7 @@ header nav a:hover{
 
 .filme-principal{
   font-size: 1rem;
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/605200.png');
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/606272.jpg');
 
   height: 25rem;
   background-size: cover; /* Especifica o tamanho total da img, no caso fazendo tomar a box toda*/
@@ -98,6 +98,54 @@ header nav a:hover{
 
 .filme-principal .container{
   width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+
+  display: block;
+  }
+
+.carrosel-filmes{
+  margin-top: 10px;
+}
+
+.footer{
+display: block;
+flex-direction: column;
+align-items: center;
+margin-left: 5px;
+margin-top: 50px;
+}
+
+.footer .copyright{
+  text-decoration: none;
+  color: #AAA;
+}
+
+.footer .copyright a{
+  color: #AAA;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
+.footer .redes-sociais{
+  color: #AAA;
+  margin-bottom: 5px;
+  
+}
+
+.footer .links-box{
+display: block;
+padding: 15px;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+color: #AAA;
+list-style-type: none;
 }
 
 
