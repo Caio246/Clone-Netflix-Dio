@@ -1,19 +1,22 @@
 :root{
+  /*  Evita de ter que ficar trocando as cores do site inteiro, na hora da manuntenção */
   --vermelho: #E50914;
   --preta: #141414;
- /*  Evita de ter que ficar trocando as cores do site inteiro, na hora da manuntenção */
 }
 
 *{
+  /* Evita que a caixa seja emburrada para os lados, deixa proporcional, não rompe a caixa */
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
-  /* Evita que a caixa seja emburrada para os lados, deixa proporcional, não rompe a caixa */
 }
+
+/* elementos base*/
 
 body{
   background: var(--preta);
   font-family: 'Times New Roman', Times, serif;
+  color:#fff;
 }
 
 header .container{
@@ -39,3 +42,62 @@ header nav a{
 header nav a:hover{
   color: #fff;
 }
+
+/*filme principal*/
+
+.filme-principal{
+  font-size: 1rem;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/605200.png');
+
+  height: 25rem;
+  background-size: cover; /* Especifica o tamanho total da img, no caso fazendo tomar a box toda*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+}
+
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: #fff;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 10px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+
