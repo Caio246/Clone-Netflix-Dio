@@ -112,7 +112,8 @@ header nav a:hover{
 }
 
 .footer{
-display: block;
+display: flex;
+
 flex-direction: column;
 align-items: center;
 margin-left: 5px;
@@ -124,17 +125,17 @@ margin-top: 50px;
   color: #AAA;
 }
 
-.footer .copyright a{
+.footer .links-redes{
   color: #AAA;
-  text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
 }
 
-.footer .redes-sociais{
-  color: #AAA;
-  margin-bottom: 5px;
-  
+.footer .links{
+  display: flex;
+  align-self: start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer .links-box{
@@ -147,5 +148,13 @@ align-content: flex-start;
 color: #AAA;
 list-style-type: none;
 }
+
+footer .copyright a{
+  color: #AAA;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
 
 
